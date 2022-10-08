@@ -6,22 +6,27 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "AstroX";
+const description = "AstroSociety is a series of collections starting with 10,000 unique, randomly generated Astronaut NFTs on the Polygon blockchain. Fuelling zero-emission gas fee free travel across the Metaverse.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Glow" },
+      { name: "Body" },
+      { name: "Skin" },
+      { name: "Indicator" },
+      { name: "Face" },
+      { name: "Eyes" },
+      { name: "Pets" },
+      { name: "Flag" },
+      { name: "Beam" },
+      { name: "Hat" },
+      { name: "Bag" },
     ],
   },
 ];
@@ -31,13 +36,13 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://astrosociety.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -79,9 +84,9 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "ASTRO",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
